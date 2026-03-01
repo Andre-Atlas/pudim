@@ -3,84 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wonders of Pudim</title>
+    <title>Wonders of Pudim | André Alves Acioli</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
 
-        <input type="checkbox" id="menu-check">
-        <label for="menu-check" class="menu-button">
-            <span></span>
-        </label>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
 
-        <nav class="sidebar">
+    <input type="checkbox" id="menu-check">
+    <label for="menu-check" class="menu-button">
+        <span></span>
+    </label>
+
+    <nav class="sidebar">
+        <div class="sidebar-header">
             <h3>Pudim Menu</h3>
-            <a href="#home">Home</a>
-            <a href="#surgimento">Surgimento</a>
-            <a href="#pelo mundo">Pelo Mundo</a>
-            <a href="#curiosidades">Curiosidades</a>
-        </nav>
+        </div>
+        <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#origem"><i class="fa-solid fa-scroll"></i> Surgimento</a>
+        <a href="#pelo-mundo"><i class="fa-solid fa-earth-americas"></i> Pelo Mundo</a>
+        <a href="#curiosidades"><i class="fa-solid fa-lightbulb"></i> Curiosidades</a>
+    </nav>
 
-        <h1 id = "home">Discover the Wonders of Pudim</h1>
-        
-        <div class="video-container">
-            <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/QHLZPN-5WUY?autoplay=1&mute=1&controls=0" 
-                title="Pudim" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-            </iframe>
+    <header id="home">
+        <div class="header-container">
+            <h1>Discover the <span class="highlight">Wonders</span> of Pudim</h1>
+            
+            <div class="video-wrapper">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/QHLZPN-5WUY?autoplay=1&mute=1&controls=0" 
+                        title="Pudim" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
-        <div class="hero-image">
-            <img src="arquivos/pudim.png" alt="pudim delicioso">
+        <div class="hero-image-box">
+            <img src="arquivos/pudim.png" alt="pudim delicioso" class="main-pudim">
         </div>
 
-        <section class="content">
-            <h2 id=" origem">📜 A origem do pudim</h2>
-            <p>
-                A palavra “pudim” vem do termo francês <em>boudin</em>, que por sua vez deriva do latim <em>botellus</em>, que significa “pequena linguiça”. Isso porque, na Idade Média, o “pudim” não era necessariamente doce: tratava-se de uma mistura de ingredientes cozidos, muitas vezes carnes, grãos e especiarias, colocados dentro de tripas de animais ou envoltos em tecidos e cozidos em água fervente.
-            </p>
-            <p>
-                Na Inglaterra medieval, por exemplo, eram comuns os puddings salgados, como o famoso black pudding (uma espécie de morcela feita com sangue e aveia). Já as versões doces começaram a ganhar popularidade a partir do século XVII, quando o açúcar se tornou mais acessível na Europa.
-            </p>
+        <section class="content-section">
+            
+            <div class="info-card" id="origem">
+                <h2><i class="fa-solid fa-scroll"></i> A origem do pudim</h2>
+                <p>
+                    A palavra “pudim” vem do termo francês <em>boudin</em>, que por sua vez deriva do latim <em>botellus</em>, que significa “pequena linguiça”. Isso porque, na Idade Média, o “pudim” não era necessariamente doce: tratava-se de uma mistura de ingredientes cozidos, muitas vezes carnes, grãos e especiarias, colocados dentro de tripas de animais ou envoltos em tecidos e cozidos em água fervente.
+                </p>
+                <p>
+                    Na Inglaterra medieval, por exemplo, eram comuns os puddings salgados, como o famoso black pudding (uma espécie de morcela feita com sangue e aveia). Já as versões doces começaram a ganhar popularidade a partir do século XVII, quando o açúcar se tornou mais acessível na Europa.
+                </p>
+            </div>
 
-            <h2 id="surgimento">🍮 O surgimento do pudim doce</h2>
-            <p>
-                Com o passar do tempo, o pudim evoluiu. Na França, surgiram preparações mais próximas do que conhecemos hoje, como o flan, feito com ovos, leite e açúcar. Essa receita atravessou fronteiras e se espalhou por diversos países.
-            </p>
-            <p>
-                No Brasil, o pudim ganhou uma versão própria e muito popular: o pudim de leite condensado. Ele se tornou um clássico das mesas brasileiras, especialmente após a popularização do leite condensado industrializado no século XX. Cremoso e coberto por uma calda de caramelo, ele é presença quase obrigatória em almoços de domingo e festas de família.
-            </p>
+            <div class="info-card highlight-card" id="surgimento">
+                <h2><i class="fa-solid fa-spoon"></i> O surgimento do pudim doce</h2>
+                <p>
+                    Com o passar do tempo, o pudim evoluiu. Na França, surgiram preparações mais próximas do que conhecemos hoje, como o flan, feito com ovos, leite e açúcar. Essa receita atravessou fronteiras e se espalhou por diversos países.
+                </p>
+                <p>
+                    No Brasil, o pudim ganhou uma versão própria e muito popular: o pudim de leite condensado. Ele se tornou um clássico das mesas brasileiras, especialmente após a popularização do leite condensado industrializado no século XX. Cremoso e coberto por uma calda de caramelo, ele é presença quase obrigatória em almoços de domingo e festas de família.
+                </p>
+            </div>
 
-            <h2 id="pelo mundo">🌍 O pudim pelo mundo</h2>
-            <p>Cada cultura adaptou o pudim ao seu gosto:</p>
-            <ul class="curiosidades">
-                <li><strong>No Reino Unido:</strong> o termo “pudding” pode significar praticamente qualquer sobremesa.</li>
-                <li><strong>Na Argentina e no Uruguai:</strong> o flan é bastante semelhante ao brasileiro, muitas vezes servido com doce de leite.</li>
-                <li><strong>Em países asiáticos:</strong> existem versões feitas com arroz ou coco, mostrando a versatilidade da receita.</li>
-            </ul>
+            <div class="info-card" id="pelo-mundo">
+                <h2><i class="fa-solid fa-earth-americas"></i> O pudim pelo mundo</h2>
+                <p>Cada cultura adaptou o pudim ao seu gosto:</p>
+                <ul class="custom-list">
+                    <li> <strong>No Reino Unido:</strong> O termo “pudding” pode significar praticamente qualquer sobremesa.</li>
+                    <li> <strong>Na Argentina e no Uruguai:</strong> O flan é bastante semelhante ao brasileiro, muitas vezes servido com doce de leite.</li>
+                    <li> <strong>Em países asiáticos:</strong> Existem versões feitas com arroz ou coco, mostrando a versatilidade da receita.</li>
+                </ul>
+            </div>
 
-            <h2 id="curiosidades">✨ Curiosidades sobre o pudim</h2>
-            <ul class="curiosidades">
-                <li>Originalmente, muitos pudins eram cozidos dentro de panos amarrados, técnica que ainda é usada em algumas receitas tradicionais.</li>
-                <li>O pudim já foi considerado uma forma prática de aproveitar sobras de alimentos.</li>
-                <li>Existem competições culinárias no Reino Unido dedicadas a versões tradicionais de puddings, como o famoso Christmas pudding.</li>
-                <li>Apesar da aparência delicada, o pudim é uma receita relativamente simples, baseada na combinação de poucos ingredientes.</li>
-            </ul>
+            <div class="info-card" id="curiosidades">
+                <h2><i class="fa-solid fa-wand-magic-sparkles"></i> Curiosidades sobre o pudim</h2>
+                <ul class="custom-list">
+                    <li><i class="fa-solid fa-circle-check"></i> Originalmente, muitos pudins eram cozidos dentro de panos amarrados, técnica que ainda é usada em algumas receitas tradicionais.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> O pudim já foi considerado uma forma prática de aproveitar sobras de alimentos.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Existem competições culinárias no Reino Unido dedicadas a versões tradicionais de puddings, como o famoso Christmas pudding.</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Apesar da aparência delicada, o pudim é uma receita relativamente simples, baseada na combinação de poucos ingredientes.</li>
+                </ul>
+            </div>
 
-            <h2>🍮 Uma sobremesa que atravessa séculos</h2>
-            <p>
-                De preparo salgado medieval a sobremesa cremosa e caramelizada, o pudim passou por transformações culturais, geográficas e gastronômicas. Hoje, ele é símbolo de tradição, conforto e memória afetiva em muitos países — especialmente no Brasil, onde conquistou lugar cativo no coração (e no prato) de milhões de pessoas.
-            </p>
+            <div class="final-text">
+                <h2>Uma sobremesa que atravessa séculos</h2>
+                <p>
+                    De preparo salgado medieval a sobremesa cremosa e caramelizada, o pudim passou por transformações culturais, geográficas e gastronômicas. Hoje, ele é símbolo de tradição, conforto e memória afetiva em muitos países — especialmente no Brasil, onde conquistou lugar cativo no coração (e no prato) de milhões de pessoas.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="share-area">
+            <h3>Compartilhe essa doçura</h3>
+            <div class="share-buttons-grid">
+                <a href="https://api.whatsapp.com/send?text=Confira as maravilhas do pudim aqui: https://andre-atlas.github.io/pudim/" target="_blank" class="share-btn wa"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="share-btn ig"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://andre-atlas.github.io/pudim/" target="_blank" class="share-btn fb"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/intent/tweet?url=https://andre-atlas.github.io/pudim/" target="_blank" class="share-btn tw"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://andre-atlas.github.io/pudim/" target="_blank" class="share-btn in"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
         </section>
     </main>
     
     <footer>
-        <p>Feito com ❤️ para amantes de sobremesa</p>
+        <div class="footer-container">
+            <p>&copy; 2026 <strong>André Alves Acioli</strong>. Todos os direitos reservados.</p>
+            <div class="separator"></div>
+            <p>Feito com <i class="fa-solid fa-heart"></i> para amantes de sobremesa</p>
+        </div>
     </footer>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+
 </body>
 </html>
